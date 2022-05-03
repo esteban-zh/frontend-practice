@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./logos/favicon_bota_fora.svg" type="img">
+
+    <title>My order</title>
+    <style>
+        :root {
+            --white:#FFFFFF;
+            --Very-light-pink:#C7C7C7;
+            --black: #000000;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0px;
+        }
+        .orders-container {
+            width: 100%;
+            height: auto;
+            display: grid;
+            place-content: center;
+        }
+        .title {
+            margin-top: 80px;
+            margin-bottom: 30px;
+            font-size: var(--lg);
+        }
+        .order-card {
+            display: flex;
+            width: 400px;
+            justify-content: space-between;
+        }
+        .order-card .info .date {
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        .order-card .info .quantity {
+            margin-top: 4px;
+            color: var(--Very-light-pink);
+        }
+        .order-card .right {
+            display: flex;
+            align-items: center;
+        }
+        .order-card .total-price {
+            align-self: center;
+            font-weight: bold;
+        }
+        .order-card img {
+            padding-left: 20px;
+        }
+        @media (max-width: 640px) {
+            .order-card {
+                width: 280px;
+            }
+            .title {
+            display: none;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+        <div class="orders-container">
+            <h2 class="title">My orders</h2>
+                <div class="order-card">
+                    <div class="info">
+                        <p class="date">04.25.2021</p>
+                        <p class="quantity">5 articles</p>
+                    </div>
+                    <div class="right">
+                        <p class="total-price">$ 560.00</p>
+                        <img src="./icons/flechita.svg" alt="">
+                    </div>        
+                </div>
+                <div class="order-card">
+                    <div class="info">
+                        <p class="date">04.25.2021</p>
+                        <p class="quantity">5 articles</p>
+                    </div>
+                    <div class="right">
+                        <p class="total-price">$ 560.00</p>
+                        <img src="./icons/flechita.svg" alt="">
+                    </div>        
+                </div>
+                <div class="order-card">
+                    <div class="info">
+                        <p class="date">04.25.2021</p>
+                        <p class="quantity">5 articles</p>
+                    </div>
+                    <div class="right">
+                        <p class="total-price">$ 560.00</p>
+                        <img src="./icons/flechita.svg" alt="">
+                    </div>        
+                </div>
+                <div class="order-card">
+                    <div class="info">
+                        <p class="date">04.25.2021</p>
+                        <p class="quantity">5 articles</p>
+                    </div>
+                    <div class="right">
+                        <p class="total-price">$ 560.00</p>
+                        <img src="./icons/flechita.svg" alt="">
+                    </div>        
+                </div>
+                <div class="order-card">
+                    <div class="info">
+                        <p class="date">04.25.2021</p>
+                        <p class="quantity">5 articles</p>
+                    </div>
+                    <div class="right">
+                        <p class="total-price">$ 560.00</p>
+                        <img src="./icons/flechita.svg" alt="">
+                    </div>        
+                </div>
+                <div class="order-card">
+                    <div class="info">
+                        <p class="date">04.25.2021</p>
+                        <p class="quantity">5 articles</p>
+                    </div>
+                    <div class="right">
+                        <p class="total-price">$ 560.00</p>
+                        <img src="./icons/flechita.svg" alt="">
+                    </div>        
+                </div>    
+        </div>
+</body>
+</html>

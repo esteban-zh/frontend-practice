@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./logos/favicon_bota_fora.svg" type="img">
+
+    <title>My order</title>
+    <style>
+        :root {
+            --white:#FFFFFF;
+            --Very-light-pink:#C7C7C7;
+            --black: #000000;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0px;
+        }
+        .orders-container {
+            width: 360px;
+            height: auto;
+            position: absolute;
+            right: 0;
+            padding: 14px;
+        }
+        .shoping-cart-flecha {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .shoping-cart-flecha img {
+            width: 40px;
+            height: 40px;
+            margin-right: 16px;
+        }
+        .shoping-cart-flecha span {
+            font-size: var(--lg);
+            font-weight: bold;
+        }
+        .order-card {
+            padding: 14px 28px 14px 28px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            margin: 60px 0 14px 0;
+            background-color: var(--text-input-field);
+        }
+        .order-card .info .total {
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        .order-card .total-price {
+            align-self: center;
+            font-weight: bold;
+        }
+        .product-card {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            padding: 10px 0 10px 0;
+        }
+        .product-card .name {
+            color: var(--Very-light-pink);
+            align-self: center;
+            margin-left: 15px;
+            font-size: var(--sm);
+        }
+        .product-card .price {
+            align-self: center;
+            font-weight: bold;
+        }
+        .product-card img:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .product-card img:nth-child(4) {
+            width: 14px;
+            align-self: center;
+            margin-left: 24px;
+            cursor: pointer;      
+        }
+        .primary-button {
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 54px;
+        }
+        @media (max-width: 640px) {
+            .title {
+            display: none;
+            }
+            .shoping-cart-flecha img {
+                display: none;
+            }
+            .orders-container {
+                width: 92%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+        <div class="orders-container">
+                <div class="shoping-cart-flecha">
+                    <img src="./icons/icone-fleche-izq.png" alt="flecha">
+                    <span class="title">Shopping cart</span>
+                </div>
+                <div class="product-card">
+                    <img src="icons/suplementos.jpg" alt="img">
+                    <p class="name">Whey protein</p>
+                    <p class="price">$ 120,00</p>
+                    <img src="./icons/icon_close.png" alt="">
+                </div>
+                <div class="product-card">
+                    <img src="icons/suplementos.jpg" alt="img">
+                    <p class="name">Whey protein</p>
+                    <p class="price">$ 120,00</p>
+                    <img src="./icons/icon_close.png" alt="">
+                </div>
+                <div class="product-card">
+                    <img src="icons/suplementos.jpg" alt="img">
+                    <p class="name">Whey protein</p>
+                    <p class="price">$ 120,00</p>
+                    <img src="./icons/icon_close.png" alt="">
+                </div>
+                <div class="product-card">
+                    <img src="icons/suplementos.jpg" alt="img">
+                    <p class="name">Whey protein</p>
+                    <p class="price">$ 120,00</p>
+                    <img src="./icons/icon_close.png" alt="">
+                </div>
+                <div class="product-card">
+                    <img src="icons/suplementos.jpg" alt="img">
+                    <p class="name">Whey protein</p>
+                    <p class="price">$ 120,00</p>
+                    <img src="./icons/icon_close.png" alt="">
+                </div>
+                <div class="order-card">
+                    <div class="info">
+                        <p class="total">Total</p>
+                    </div>
+                    <p class="total-price">$ 560.00</p>
+                </div>
+                <button class="primary-button">
+                    Checkout
+                </button>
+                          
+        </div>
+</body>
+</html>
